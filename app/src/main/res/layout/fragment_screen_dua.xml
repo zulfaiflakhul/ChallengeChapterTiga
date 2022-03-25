@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenDua">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_2"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/but_screen3"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:autofillHints="nama"
+        android:background="@drawable/custom_edittext"
+        android:hint="@string/masukkan_nama"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/but_screen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/go_to_screen_3"
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

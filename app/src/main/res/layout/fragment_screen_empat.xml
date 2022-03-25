@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenEmpat">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_4"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_umur"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/et_alamat"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:hint="@string/masukkan_usia"
+        android:inputType="number"
+        android:autofillHints="usia"
+        android:background="@drawable/custom_edittext" />
+
+    <EditText
+        android:id="@+id/et_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/et_pekerjaan"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:hint="@string/masukkan_alamat"
+        android:inputType="text"
+        android:autofillHints="alamat"
+        android:background="@drawable/custom_edittext" />
+
+    <EditText
+        android:id="@+id/et_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/but_backscreen3"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:hint="@string/masukkan_pekerjaan"
+        android:inputType="text"
+        android:autofillHints="pekerjaan"
+        android:background="@drawable/custom_edittext" />
+
+    <Button
+        android:id="@+id/but_backscreen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button"
+        android:text="@string/back_to_screen_3" />
+
+</RelativeLayout>
